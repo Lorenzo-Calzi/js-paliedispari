@@ -1,3 +1,22 @@
+//ES.1
+var userWord = prompt('Inserire una parola Palindroma');
+  
+function invertiParola(word){
+  var reverseWord = word.split('').reverse().join('');  
+  return reverseWord;
+}
+
+var reverseWord = invertiParola(userWord);
+
+if(userWord == reverseWord){
+    console.log('La parola è palindroma');
+  } else {
+    console.log('La parola non è palindroma');
+  }
+
+
+//ES.2
+
 //1. L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 var scelta = prompt('Scegli tra pari o dispari');
 
