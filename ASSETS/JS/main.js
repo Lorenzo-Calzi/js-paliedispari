@@ -16,6 +16,27 @@ console.log('Il numero random è: ' + result);
 
 //3.Sommiamo i due numeri e Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
+/* Funzione Somma */
+function sum (number_1, number_2) {
+    return number_1 + number_2;
+}
+
+var sum = sum(userNumber, result)
+console.log('La somma è: ' + sum);
+
+
+/* Funzione Pari o Dispari */
+function isEven(number) {
+    if(number % 2 === 0 ) {
+        return 'pari';
+    }
+    return 'dispari';
+}
 
 //4.Dichiariamo chi ha vinto.
+if(scelta == isEven(sum)) {
+    console.log("Ha vinto l'utente");
+} else {
+    console.log("Ha vinto il computer");
+}
 
