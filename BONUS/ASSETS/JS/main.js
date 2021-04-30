@@ -10,11 +10,13 @@ var reverseWord = invertiParola(userWord);
 
 if(userWord == reverseWord){
     console.log('La parola è palindroma');
+    document.getElementById('palindromo').innerHTML = userWord + ': ' + 'é una parola palindroma';
   } else {
     console.log('La parola non è palindroma');
+    document.getElementById('palindromo').innerHTML = userWord + ': ' + 'non é una parola palindroma';
   }
 
-  document.getElementById('palindromo').innerHTML = userWord;
+
 
 
 //ES.2
